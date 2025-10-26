@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  background-color: rgba(0, 0, 0, 0.834);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 1920px;
+  width: 100%;
+  padding: 1rem;
+}
+main nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 20px;
+}
+main nav .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.6rem;
+}
+main nav .buttons button {
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main nav .buttons button span {
+  background-color: #cebd63;
+  color: black;
+  padding: 3px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 0.8rem;
+}
+main nav .buttons i {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+main .img-wrap {
+  margin-top: 1rem;
+  width: 100%;
+}
+main .img-wrap img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .box {
+  width: 100%;
+  margin-top: 1rem;
+}
+main .box .wrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+}
+main .box .wrapper .JOIN {
+  color: rgba(255, 255, 255, 0.464);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+main .box .wrapper .studio {
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+main .box .wrapper .tagline {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+main .box .wrapper .success {
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+main .box .wrapper p {
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 2rem;
+}
+main .box .wrapper .philosophy {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+main .box .wrapper div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .box .wrapper div i {
+  color: rgba(255, 255, 255, 0.5058823529);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.193);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  border: solid gray 1px;
+}
+main .box .wrapper div h1 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+}
+main .analytics {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+main .analytics .left,
+main .analytics .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .analytics .metric {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.534);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+main .analytics h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+main .our-team {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 1.9rem;
+  padding: 1.5rem 1rem;
+}
+main .our-team p {
+  font-weight: 100;
+}
+main .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .cards .card {
+  width: 100%;
+  background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp");
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+main .cards .card .top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .cards .card .top i {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: solid rgba(255, 255, 255, 0.464) 1px;
+  color: rgba(255, 255, 255, 0.634);
+  font-weight: 100;
+}
+main .cards .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.2rem 1rem;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+main .cards .card .bottom h1 {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+main .cards .card .bottom h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .cards .card:nth-child(2) {
+  background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp");
+}
+main .cards .card:nth-child(3) {
+  background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp");
+}
+main .midway {
+  width: 100%;
+  margin-top: 1rem;
+}
+main .midway img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .last-box {
+  margin-top: 1rem;
+  background-color: #cebd63;
+  padding: 2rem;
+  border-radius: 10px;
+}
+main .last-box p {
+  margin-bottom: 0.5rem;
+}
+main .last-box h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 1rem;
+}
+main .last-box button {
+  border: none;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+main .info {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+main .info h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+main .info div p {
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+main .info button {
+  margin-top: 1rem;
+  border: none;
+  background-color: #cebd63;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+main .the-end {
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.534);
+}
+main .the-end h1 {
+  font-size: 1rem;
+  font-weight: 200;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+
+@media (min-width: 991px) {
+  main .grid {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+  main .grid .img-wrap img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .box {
+    display: flex;
+  }
+  main .box .wrapper {
+    padding: 3rem;
+  }
+  main .box .wrapper .studio {
+    margin-bottom: 10rem;
+  }
+  main .box .wrapper .tagline {
+    font-size: 3.2rem;
+    font-weight: 100;
+  }
+  main .box .wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  main .analytics {
+    padding: 4rem 0rem;
+  }
+  main .analytics .left,
+  main .analytics .right {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+  }
+  main .second {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  main .second img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .our-team {
+    padding: 3rem 1rem;
+  }
+  main .cards {
+    flex-direction: row;
+  }
+  main .ending {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  main .ending .box {
+    width: 50%;
+  }
+  main .ending .box .wrapper .success {
+    margin-bottom: 15rem;
+  }
+  main .ending .midway {
+    width: 50%;
+  }
+  main .ending .midway img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .last-box {
+    padding: 3rem;
+  }
+  main .last-box .wierd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+  }
+  main .last-box .wierd h1 {
+    font-size: 3rem;
+  }
+  main .last-box .wierd button {
+    width: 20%;
+  }
+  main .info {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .info button {
+    margin-bottom: 0rem;
+  }
+}/*# sourceMappingURL=style.css.map */

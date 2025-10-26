@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+header {
+  height: 30vh;
+  width: 100%;
+  background-color: darkred;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+header p {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+main {
+  min-height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-top: 1rem;
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#About-Me {
+  background-color: white;
+}
+section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#About-Me p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+#Education {
+  background-color: rgb(162, 211, 230);
+  margin-top: 1rem;
+  height: 40vh;
+}
+#Education h2 {
+  margin-bottom: 1rem;
+}
+#Education p {
+  background-color: white;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#skills {
+  height: 50vh;
+  background-color: rgb(236, 236, 121);
+}
+#skills h2 {
+  margin-bottom: 1rem;
+}
+#skills p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  height: 3rem;
+}
+
+#contact {
+  background-color: rgb(174, 239, 182);
+  margin-top: 1rem;
+  height: 40vh;
+}
+#contact h2 {
+  margin-bottom: 1rem;
+}
+#contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  /* font-weight: 700; */
+  height: 5vh;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 200;
+}

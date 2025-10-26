@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    // height: 100%;
+  background-color: rgba(0, 0, 0, 0.834);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@mixin center-flex($justify-content: space-around) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+main {
+  max-width: 1920px;
+  
+  width: 100%;
+  padding: 1rem;
+  nav {
+    width: 100%;
+    @include center-flex(space-between);
+    // padding: 20px 0rem;
+
+    h1 {
+      color: rgb(255, 255, 255);
+      font-weight: 100;
+      font-size: 20px;
+    }
+
+    .buttons {
+      @include center-flex;
+      gap: 0.6rem;
+
+      button {
+        padding: 0.9rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        color: white;
+
+        font-size: 0.9rem;
+        font-weight: 200;
+        @include center-flex;
+
+        span {
+          background-color: #cebd63;
+          color: black;
+          padding: 3px 6px;
+          border-radius: 50%;
+          margin-left: 5px;
+          font-size: 0.8rem;
+        }
+      }
+
+      i {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  .img-wrap {
+    margin-top: 1rem;
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .box {
+    width: 100%;
+    margin-top: 1rem;
+    // padding: 1rem;
+
+    .wrapper {
+      background-color: rgba(255, 255, 255, 0.05);
+      width: 100%;
+      padding: 2rem;
+      border-radius: 10px;
+      .JOIN {
+        color: rgba(255, 255, 255, 0.464);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .studio {
+        color: white;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-bottom: 4rem;
+      }
+      .tagline {
+        color: white;
+        font-size: 2.3rem;
+        font-weight: 100;
+        margin-bottom: 1rem;
+      }
+      .success {
+        color: white;
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.534);
+        font-size: 1.3rem;
+        font-weight: 100;
+        line-height: 2rem;
+      }
+
+      .philosophy {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+      }
+      div {
+        margin-top: 1rem;
+        @include center-flex(flex-start);
+        i {
+          color: #ffffff81;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.193);
+          padding: 0.5rem;
+          font-size: 1.5rem;
+          margin-right: 0.8rem;
+          border: solid gray 1px;
+        }
+        h1 {
+          color: white;
+          font-size: 1rem;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  .analytics {
+    width: 100%;
+    margin-top: 1rem;
+    @include center-flex;
+    padding: 1rem 2rem;
+
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .metric {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.534);
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 200;
+    }
+  }
+  .our-team {
+    @include center-flex(flex-start);
+    color: white;
+    font-size: 1.9rem;
+    padding: 1.5rem 1rem;
+    p {
+      font-weight: 100;
+    }
+  }
+
+  .cards {
+    width: 100%;
+    @include center-flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .card {
+      width: 100%;
+      background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp");
+      border-radius: 10px;
+      aspect-ratio: 1/1;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem;
+
+      .top {
+        @include center-flex(flex-end);
+        gap: 0.5rem;
+        i {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 0.8rem;
+          border-radius: 50px;
+          border: solid rgba(255, 255, 255, 0.464) 1px;
+          color: rgba(255, 255, 255, 0.634);
+          font-weight: 100;
+        }
+      }
+      .bottom {
+        @include center-flex(space-between);
+        backdrop-filter: blur(1rem);
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 1.2rem 1rem;
+        color: white;
+        h1 {
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+        h2 {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+      }
+    }
+    .card:nth-child(2) {
+      background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp");
+    }
+    .card:nth-child(3) {
+      background-image: url("https://cdn.prod.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp");
+    }
+  }
+
+  .midway {
+    width: 100%;
+    margin-top: 1rem;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .last-box {
+    margin-top: 1rem;
+    background-color: #cebd63;
+    padding: 2rem;
+    border-radius: 10px;
+    p {
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 200;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      margin-bottom: 1rem;
+    }
+    button {
+      border: none;
+      color: white;
+      background-color: black;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  .info {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    h1 {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+    div {
+      p {
+        color: rgba(255, 255, 255, 0.534);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+      border: none;
+      background-color: #cebd63;
+      color: black;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .the-end {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    @include center-flex;
+    border-radius: 10px;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.534);
+    h1 {
+      font-size: 1rem;
+      font-weight: 200;
+      text-decoration: underline 1px;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  main {
+    .grid {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+
+      .img-wrap {
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .box {
+        display: flex;
+      .wrapper {
+        padding: 3rem;
+
+        .studio {
+          margin-bottom: 10rem;
+        }
+        .tagline {
+          font-size: 3.2rem;
+          font-weight: 100;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .analytics {
+      padding: 4rem 0rem;
+      .left,
+      .right {
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-around;
+      }
+    }
+
+    .second {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .our-team {
+      padding: 3rem 1rem;
+    }
+    .cards {
+      flex-direction: row;
+    }
+    .ending {
+      @include center-flex();
+      align-items: stretch;
+      gap: 1rem;
+      .box {
+        width: 50%;
+        .wrapper {
+          .success {
+            margin-bottom: 15rem;
+          }
+        }
+      }
+
+      .midway {
+        width: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .last-box {
+      padding: 3rem;
+      .wierd {
+        // width: 100%;
+        @include center-flex(space-between);
+        align-items: flex-end;
+        h1 {
+          font-size: 3rem;
+          // width: 100%;
+        }
+        button {
+          width: 20%;
+        }
+      }
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        button{
+            margin-bottom: 0rem;
+        }
+    }
+    
+    
+  }
+}
