@@ -1,0 +1,167 @@
+$black: #212121;
+$white: #eeeff3;
+$gray: #d8d9dd;
+$purple: #bd82ff;
+$neon: #9ff300;
+
+@mixin box() {
+  border-radius: 2rem;
+  transition: .5s ease;
+}
+
+@mixin hover-effect($color) {
+  cursor: pointer;
+  background-color: darken($color, 5%);
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "main main";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15vh 85vh;
+}
+
+header {
+  grid-area: header;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  .head-left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 4rem;
+  }
+
+  .head-right {
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+
+    .btn-cont {
+      background-color: $gray;
+      border-radius: 1rem;
+      padding: 0.2rem 0 0.2rem 0;
+
+      .login {
+        background: none;
+        border: none;
+        padding: 1rem 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+      .signup {
+        background: none;
+        border: none;
+        background-color: $black;
+        color: $gray;
+        padding: 0.8rem 2rem;
+        border-radius: 1rem;
+        margin-right: 0.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+main {
+  grid-area: main;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+  padding-top: 0;
+  gap: 1rem;
+  .left {
+    background-color: $black;
+    @include box();
+    color: $white;
+    font-size: 2rem;
+    padding: 5rem;
+  }
+
+  .left:hover{
+    @include hover-effect($black)
+  }
+
+  .right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    .up {
+      background-color: $gray;
+      @include box();
+      font-size: 2rem;
+      position: relative;
+      h2 {
+        color: $black;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+
+        font-weight: 500;
+      }
+    }
+
+    .up:hover{
+        @include hover-effect($gray)
+    }
+    .down {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      .down-left {
+        background-color: $purple;
+        @include box();
+        color: $white;
+        position: relative;
+        h2 {
+          position: absolute;
+          bottom: 1rem;
+          font-size: 3rem;
+          font-weight: 400;
+          left: 1rem;
+        }
+      }
+
+      .down-left:hover{
+        @include hover-effect($purple)
+      }
+      .down-right {
+        background-color: $neon;
+        @include box();
+        position: relative;
+
+        h2 {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          font-size: 3rem;
+          font-weight: 400;
+        }
+      }
+      .down-right:hover{
+        @include hover-effect($neon)
+      }
+    }
+  }
+}
