@@ -104,27 +104,78 @@
 . Pattern: Print triangle using *
 . Sum of even numbers in an array using forEach*/
 
-for(let i=1;i<11;i++)console.log(i);
-for(let i=1;i<21;i++){
-    if(i%2==0){
-        console.log(i);
-    }
-}
+// for(let i=1;i<11;i++)console.log(i);
+// for(let i=1;i<21;i++){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+// }
 
-let nums=[1,2,3,4,6]
-    let sum=0;
-nums.forEach((num)=>{
-    if(num%2==0)sum+=num;  
-})
-console.log(sum);
+// let nums=[1,2,3,4,6]
+//     let sum=0;
+// nums.forEach((num)=>{
+//     if(num%2==0)sum+=num;  
+// })
+// console.log(sum);
 
 
-for(let row=0;row<4;row++){
-    let triangle=""
-    for(let col=0;col<=row;col++){
-        triangle+="*"
-    }
-    console.log(triangle);
-}
-let box=[1,2,3]
-console.log(...box);
+// for(let row=0;row<4;row++){
+//     let triangle=""
+//     for(let col=0;col<=row;col++){
+//         triangle+="*"
+//     }
+//     console.log(triangle);
+// }
+// let box=[1,2,3]
+// console.log(...box);
+
+// // Closure Counter Function
+// function createCounter() {
+//     let count = 0; // This is the "backpack" variable
+
+//     return function() {
+//         count++; // Remembers and updates 'count'
+//         return count;
+//     };
+// }
+
+// const counter = createCounter();
+
+// console.log(counter()); // 1
+// console.log(counter()); // 2
+// console.log(counter()); // 3
+
+// // Discount Calculator (HOF Style)
+
+// function createDiscountCalculator(discountPercent) {
+//     return function(price) {
+//         return price - (price * (discountPercent / 100));
+//     };
+// }
+
+// const tenPercentOff = createDiscountCalculator(10);
+// const halfPrice = createDiscountCalculator(50);
+
+// console.log(tenPercentOff(1000)); // 900
+// console.log(halfPrice(1000));    // 500
+
+// Make a toUpperCase transformer using HOF
+
+// function uC(a){
+//     return a.toUpperCase();
+// }
+
+// function ans(str,transformer){
+//     return transformer(str);
+// }
+
+// console.log(ans("sam",uC));
+
+let nums = [1, 2, 3, 4];
+let total=nums.reduce((acc, num) => acc + num, 0);
+console.log(total);
+console.log(nums.find(n => n > 2));// First match
+console.log(nums.some(n => n > 3)); // At least one true
+console.log(nums.every(n => n > 1))
+
+console.log([10, 2, 3].sort());
