@@ -16,12 +16,18 @@
 //     counter.innerText=0;
 // })
 
-const list=document.createElement("ul");
-list.innerText="Counting";
+// const list=document.createElement("ul");
+// list.innerText="Counting";
 
-for(let i=1;i<=3;i++){
-    const item=document.createElement("li");
-    item.innerText=`Item ${i}`
-    list.appendChild(item);
-}
-document.body.appendChild(list);
+// for(let i=1;i<=3;i++){
+//     const item=document.createElement("li");
+//     item.innerText=`Item ${i}`
+//     list.appendChild(item);
+// }
+// document.body.appendChild(list);
+
+// const btn=document.querySelector("button");
+
+// btn.addEventListener("mouseup",()=>{
+//     console.log("pressed");
+// })
