@@ -28,6 +28,12 @@
 
 // const btn=document.querySelector("button");
 
-// btn.addEventListener("mouseup",()=>{
+// btn.addEventListener("keypress",()=>{
 //     console.log("pressed");
+// })
+
+// const heading=document.querySelector("h1");
+
+// document.addEventListener("keypress",(k)=>{
+//     heading.innerText=k.key
 // })
